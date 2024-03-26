@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Bouldering"
+        tools:targetApi="31">
+        <activity
+            android:name=".SelectSession"
+            android:exported="false" />
+        <activity
+            android:name=".ScheduleSession"
+            android:exported="false" />
+        <activity
+            android:name=".SelectTime"
+            android:exported="false" />
+        <activity
+            android:name=".SelectDate"
+            android:exported="false" />
+        <activity
+            android:name=".BookingInfo"
+            android:exported="false" />
+        <activity
+            android:name=".BoulderInfo"
+            android:exported="false" />
+        <activity
+            android:name=".Analysis"
+            android:exported="false" />
+        <activity
+            android:name=".Filters"
+            android:exported="false" />
+        <activity
+            android:name=".MakeAccount"
+            android:exported="false" />
+        <activity
+            android:name=".Login"
+            android:exported="false" />
+        <activity
+            android:name=".MainBooking"
+            android:exported="false" />
+        <activity
+            android:name=".MainBouldering"
+            android:exported="false" />
+        <activity
+            android:name=".UpdateAnalytic"
+            android:exported="false" />
+        <activity
+            android:name=".ViewAnalytics"
+            android:exported="false" />
+        <activity
+            android:name=".CreateAnalytic"
+            android:exported="false" />
+        <activity
+            android:name=".UpdateBooking"
+            android:exported="false" />
+        <activity
+            android:name=".ViewBookings"
+            android:exported="false" />
+        <activity
+            android:name=".CreateBooking"
+            android:exported="false" />
+        <activity
+            android:name=".UpdateBoulder"
+            android:exported="false" />
+        <activity
+            android:name=".ViewBoulders"
+            android:exported="false" />
+        <activity
+            android:name=".AdminSelection"
+            android:exported="false" />
+        <activity
+            android:name=".UpdateUser"
+            android:exported="false" />
+        <activity
+            android:name=".CreateUser"
+            android:exported="false" />
+        <activity
+            android:name=".CreateBoulder"
+            android:exported="false" />
+        <activity
+            android:name=".ViewUsers"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

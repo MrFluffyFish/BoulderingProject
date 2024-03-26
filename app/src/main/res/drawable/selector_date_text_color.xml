@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- The color used by the disabled dates -->
+    <item android:color="@color/calendarAccent" android:state_enabled="false" />
+
+    <!-- The color used by everything else -->
+    <item android:color="@color/white" />
+</selector>

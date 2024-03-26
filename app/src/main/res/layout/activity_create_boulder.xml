@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreateBoulder">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".CreateBoulder">
+
+        <ImageButton
+            android:id="@+id/idBtnAdminSelection"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_marginStart="9dp"
+            android:layout_marginTop="9dp"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/layout_btn"
+            android:backgroundTint="@color/dark_blue"
+            app:srcCompat="@drawable/go_back" />
+
+        <EditText
+            android:id="@+id/idEdtGrade"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:hint="Enter grade" />
+
+        <EditText
+            android:id="@+id/idEdtPosX"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:hint="Enter posX" />
+
+        <EditText
+            android:id="@+id/idEdtPosY"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:hint="Enter posY" />
+
+        <EditText
+            android:id="@+id/idEdtColour"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:hint="Enter colour" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="193dp"
+            android:id="@+id/idCreateBoulderScroll">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <CheckBox
+                    android:id="@+id/idCBJug"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="9dp"
+                    android:text="Jugs" />
+
+                <CheckBox
+                    android:id="@+id/idCBCrimp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="9dp"
+                    android:text="Crimps" />
+
+                <CheckBox
+                    android:id="@+id/idCBPinch"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="9dp"
+                    android:text="Pinches" />
+
+                <CheckBox
+                    android:id="@+id/idCBPocket"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="9dp"
+                    android:text="Pockets" />
+
+                <CheckBox
+                    android:id="@+id/idCBSloper"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="9dp"
+                    android:text="Slopers" />
+
+                <CheckBox
+                    android:id="@+id/idCBSlab"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="9dp"
+                    android:text="Slab" />
+
+                <CheckBox
+                    android:id="@+id/idCBOverhang"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="9dp"
+                    android:text="Overhang" />
+
+                <CheckBox
+                    android:id="@+id/idCBArete"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="9dp"
+                    android:text="Arete" />
+
+                <CheckBox
+                    android:id="@+id/idCBVertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="9dp"
+                    android:text="Vertical" />
+
+                <CheckBox
+                    android:id="@+id/idCBTraverse"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="9dp"
+                    android:text="Traverse" />
+
+                <CheckBox
+                    android:id="@+id/idCBDynamic"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="9dp"
+                    android:text="Dynamic" />
+
+                <CheckBox
+                    android:id="@+id/idCBFingery"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="9dp"
+                    android:text="Fingery" />
+
+                <CheckBox
+                    android:id="@+id/idCBTechnical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="9dp"
+                    android:text="Technical" />
+
+                <CheckBox
+                    android:id="@+id/idCBPowerful"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="9dp"
+                    android:text="Powerful" />
+
+                <CheckBox
+                    android:id="@+id/idCBReachy"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="9dp"
+                    android:text="Reachy" />
+            </LinearLayout>
+        </ScrollView>
+
+        <Button
+            android:id="@+id/idBtnAddBoulder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Add boulder"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/idBtnReadBoulders"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Read all boulders"
+            android:textAllCaps="false" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

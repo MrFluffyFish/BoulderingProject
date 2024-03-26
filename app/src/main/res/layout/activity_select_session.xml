@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SelectSession">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".SelectSession">
+
+        <ImageButton
+            android:id="@+id/idBtnBookingInfo"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_marginStart="9dp"
+            android:layout_marginTop="9dp"
+            android:background="@drawable/layout_btn"
+            android:backgroundTint="@color/dark_blue"
+            app:srcCompat="@drawable/go_back" />
+
+        <LinearLayout
+            android:layout_width="350dp"
+            android:layout_height="430dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="80dp"
+            android:background="@drawable/layout_bg"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:layout_marginTop="30dp"
+                android:text="Select a session:"
+                android:textSize="14pt" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="40dp"
+                android:layout_marginTop="30dp">
+
+                <RadioButton
+                    android:id="@+id/idRBOpenSession"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Open Session"
+                    android:textColor="@color/white"
+                    android:textSize="11pt" />
+
+                <RadioButton
+                    android:id="@+id/idRBPowerHour"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Power Hour"
+                    android:textColor="@color/white"
+                    android:textSize="11pt" />
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/idBtnSubmitSession"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="130dp"
+                android:backgroundTint="@color/red"
+                android:text="Submit session"
+                android:textSize="12pt"
+                app:cornerRadius="15dp" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

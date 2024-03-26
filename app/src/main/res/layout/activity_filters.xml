@@ -1,0 +1,276 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Filters">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".Filters">
+
+        <ImageButton
+            android:id="@+id/idBtnBouldering"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_marginStart="9dp"
+            android:layout_marginTop="9dp"
+            android:background="@drawable/layout_btn"
+            android:backgroundTint="@color/dark_blue"
+            app:srcCompat="@drawable/go_back" />
+
+        <TextView
+            android:id="@+id/idTVGradeRange"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Grade range:"
+            android:textAlignment="center"
+            android:textSize="10pt" />
+
+        <com.google.android.material.slider.RangeSlider
+            android:id="@+id/idRSGradeSlider"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:valueFrom="0.0"
+            android:valueTo="18.0"
+            app:values="@array/initial_slider_values"
+            android:stepSize="1.0" />
+
+        <LinearLayout
+            android:layout_width="350dp"
+            android:layout_height="500dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/layout_bg"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="15dp"
+                    android:text="Holds:"
+                    android:textSize="10pt" />
+
+                <CheckBox
+                    android:id="@+id/idCBJug"
+                    android:layout_width="60dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="80dp"
+                    android:layout_toEndOf="@+id/idCBPocket"
+                    android:text="Jug"
+                    android:textColor="@color/white" />
+
+                <CheckBox
+                    android:id="@+id/idCBCrimp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="50dp"
+                    android:text="Crimp"
+                    android:textColor="@color/white" />
+
+                <CheckBox
+                    android:id="@+id/idCBPinch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="50dp"
+                    android:layout_toEndOf="@+id/idCBCrimp"
+                    android:text="Pinch"
+                    android:textColor="@color/white" />
+
+                <CheckBox
+                    android:id="@+id/idCBPocket"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="80dp"
+                    android:text="Pocket"
+                    android:textColor="@color/white" />
+
+                <CheckBox
+                    android:id="@+id/idCBSloper"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="37dp"
+                    android:layout_marginTop="50dp"
+                    android:layout_toEndOf="@+id/idCBPinch"
+                    android:text="Sloper"
+                    android:textColor="@color/white" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="15dp"
+                    android:text="Wall Type:"
+                    android:textSize="10pt" />
+
+                <CheckBox
+                    android:id="@+id/idCBSlab"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="19dp"
+                    android:layout_marginTop="80dp"
+                    android:layout_toEndOf="@+id/idCBVertical"
+                    android:text="Slab"
+                    android:textColor="@color/white" />
+
+                <CheckBox
+                    android:id="@+id/idCBOverhang"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="50dp"
+                    android:text="Overhang"
+                    android:textColor="@color/white" />
+
+                <CheckBox
+                    android:id="@+id/idCBArete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="7dp"
+                    android:layout_marginTop="50dp"
+                    android:layout_toEndOf="@+id/idCBOverhang"
+                    android:text="Arete"
+                    android:textColor="@color/white" />
+
+                <CheckBox
+                    android:id="@+id/idCBVertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="80dp"
+                    android:text="Vertical"
+                    android:textColor="@color/white" />
+
+                <CheckBox
+                    android:id="@+id/idCBTraverse"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="37dp"
+                    android:layout_marginTop="50dp"
+                    android:layout_toEndOf="@+id/idCBArete"
+                    android:text="Traverse"
+                    android:textColor="@color/white" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="15dp"
+                    android:text="Skills:"
+                    android:textSize="10pt" />
+
+                <CheckBox
+                    android:id="@+id/idCBDynamic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="9dp"
+                    android:layout_marginTop="80dp"
+                    android:layout_toEndOf="@+id/idCBPowerful"
+                    android:text="Dynamic"
+                    android:textColor="@color/white" />
+
+                <CheckBox
+                    android:id="@+id/idCBFingery"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="50dp"
+                    android:text="Fingery"
+                    android:textColor="@color/white" />
+
+                <CheckBox
+                    android:id="@+id/idCBTechnical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="19dp"
+                    android:layout_marginTop="50dp"
+                    android:layout_toEndOf="@+id/idCBFingery"
+                    android:text="Technical"
+                    android:textColor="@color/white" />
+
+                <CheckBox
+                    android:id="@+id/idCBPowerful"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="80dp"
+                    android:text="Powerful"
+                    android:textColor="@color/white" />
+
+                <CheckBox
+                    android:id="@+id/idCBReachy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginTop="50dp"
+                    android:layout_toEndOf="@+id/idCBTechnical"
+                    android:text="Reachy"
+                    android:textColor="@color/white" />
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/idBtnApplyFilters"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="25dp"
+                android:backgroundTint="@color/red"
+                android:text="Apply Filters"
+                android:textSize="13pt"
+                app:cornerRadius="15dp" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

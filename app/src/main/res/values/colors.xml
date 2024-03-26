@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="light_blue">#FF669999</color>
+    <color name="dark_blue">#FF194b4f</color>
+    <color name="grey">#FFa0a0a0</color>
+    <color name="dark_grey">#FF7d7d7d</color>
+    <color name="red">#FFe20614</color>
+
+    <color name="boulderRed">#FFf54242</color>
+    <color name="boulderPink">#FFf542b3</color>
+    <color name="boulderOrange">#FFf59042</color>
+    <color name="boulderYellow">#FFf5d742</color>
+    <color name="boulderGreen">#FF42f54e</color>
+    <color name="boulderBlue">#FF4287f5</color>
+    <color name="boulderPurple">#FF8f34eb</color>
+    <color name="boulderBrown">#ad8110</color>
+    <color name="boulderWhite">#FFFFFFFF</color>
+    <color name="boulderBlack">#FF000000</color>
+
+    <color name="calendarAccent">#216267</color>
+</resources>
+

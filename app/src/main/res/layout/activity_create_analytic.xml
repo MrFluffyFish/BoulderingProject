@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".CreateAnalytic">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".CreateAnalytic">
+
+        <ImageButton
+            android:id="@+id/idBtnAdminSelection"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_marginStart="9dp"
+            android:layout_marginTop="9dp"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/layout_btn"
+            android:backgroundTint="@color/dark_blue"
+            app:srcCompat="@drawable/go_back" />
+
+        <EditText
+            android:id="@+id/idEdtUserID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:hint="Enter userID" />
+
+        <EditText
+            android:id="@+id/idEdtBoulderID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:hint="Enter boulderID" />
+
+        <EditText
+            android:id="@+id/idEdtVote"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:hint="Enter vote" />
+
+        <Button
+            android:id="@+id/idBtnAddAnalytic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Add analytic"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/idBtnReadAnalytics"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Read all analytics"
+            android:textAllCaps="false" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
